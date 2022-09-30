@@ -1,11 +1,14 @@
 package fr.kira.archi.hexa.equipes.ports.input;
 
 import fr.kira.archi.hexa.equipes.entities.Equipe;
+import fr.kira.archi.hexa.equipes.entities.Personne;
 import fr.kira.archi.hexa.equipes.logics.EquipeLogique;
 import fr.kira.archi.hexa.equipes.ports.output.EquipeDatasourceOutputPort;
+import fr.kira.archi.hexa.equipes.ports.output.PersonneOutputPort;
 import fr.kira.archi.hexa.equipes.ports.output.RecuperatuinEquipeOutputPort;
 import fr.kira.archi.hexa.equipes.ports.output.SauvegardeEquipeOutputPort;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -18,10 +21,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class SauvegardeEquipeInputPortTest {
     private static EquipeInputPort logique;
     private static EquipeDatasourceOutputPort datasourceOutputPort;
-    @BeforeAll
-    static void setUp() {
+    private static PersonneOutputPort personneOutputPort;
+    @BeforeEach
+    void setUp() {
         datasourceOutputPort = Mockito.mock(EquipeDatasourceOutputPort.class);
-        logique = new EquipeLogique(datasourceOutputPort);
+        personneOutputPort = Mockito.mock(PersonneOutputPort.class);
+        logique = new EquipeLogique(datasourceOutputPort, personneOutputPort);
     }
     @Test
     @DisplayName("Lors de la sauvegarde d'une équipe, il fait l'appel a la datasource pour sauvegarder l'équipe")
@@ -42,5 +47,17 @@ class SauvegardeEquipeInputPortTest {
         //When
         //Then
         assertThrows(IllegalArgumentException.class, () -> logique.sauvegarderEquipe(equipe));
+    }
+
+    @Test
+    @DisplayName("Lors de l'ajout dune nouvelle personne a l'équipe, il fait l'appel a la datasource pour sauvegarder l'équipe")
+    void ajouterPersonneAEquipe() {
+        //Given
+        Equipe equipe = new Equipe("1","Equipe 1");
+        Personne personne = new Personne();
+        //When
+//        logique.ajouterPersonneAEquipe(equipe.getId(),personne);
+        //Then
+        // Mockito.verify(datasourceOutputPort).sauvegarderEquipe(equipe);
     }
 }

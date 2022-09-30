@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea478ec2-8a52-4836-8bc9-438a54d63d0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/entities/Personne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/input/EquipeInputPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/input/SauvegardeEquipeInputPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/output/EquipeDatasourceOutputPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/output/RecuperatuinEquipeOutputPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/output/SauvegardeEquipeOutputPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/fr/kira/archi/hexa/equipes/ports/input/SauvegardeEquipeInputPortTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/output/PersonneOutputPort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/entities/Equipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/entities/Equipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/logics/RecuperationEquipeLogique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/logics/EquipeLogique.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/logics/EquipeLogique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/logics/EquipeLogique.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/input/SauvegardeEquipeInputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/input/SauvegardeEquipeInputPort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fr/kira/archi/hexa/equipes/ports/input/RecuperationEquipesInputPortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/kira/archi/hexa/equipes/ports/input/RecuperationEquipesInputPortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/fr/kira/archi/hexa/equipes/ports/input/SauvegardeEquipeInputPortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/kira/archi/hexa/equipes/ports/input/SauvegardeEquipeInputPortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -66,7 +61,7 @@
       <recent name="fr.kira.archi.hexa.equipes.ports.input" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.fr.kira.archi.hexa.equipes in Competences">
+  <component name="RunManager" selected="JUnit.SauvegardeEquipeInputPortTest.ajouterPersonneAEquipe">
     <configuration name="RecuperationEquipesInputPortTest.recuperationEquipe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Competences" />
       <extension name="coverage">
@@ -115,6 +110,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SauvegardeEquipeInputPortTest.ajouterPersonneAEquipe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Competences" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.kira.archi.hexa.equipes.ports.input.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fr.kira.archi.hexa.equipes.ports.input" />
+      <option name="MAIN_CLASS_NAME" value="fr.kira.archi.hexa.equipes.ports.input.SauvegardeEquipeInputPortTest" />
+      <option name="METHOD_NAME" value="ajouterPersonneAEquipe" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="fr.kira.archi.hexa.equipes in Competences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Competences" />
       <extension name="coverage">
@@ -131,6 +142,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SauvegardeEquipeInputPortTest.ajouterPersonneAEquipe" />
         <item itemvalue="JUnit.fr.kira.archi.hexa.equipes in Competences" />
         <item itemvalue="JUnit.RecuperationEquipesInputPortTest.recuperationEquipeParId" />
         <item itemvalue="JUnit.RecuperationEquipesInputPortTest.recuperationEquipe" />

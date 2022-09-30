@@ -11,5 +11,11 @@ public interface SauvegardeEquipeInputPort {
      */
     Equipe sauvegarderEquipe(Equipe equipe);
 
-    Equipe ajoutPersonne(Personne personne);
+    /**
+     * Ajoute une personne à une équipe
+     * @param idEquipe    l'équipe à laquelle ajouter la personne
+     * @param personne  la personne à ajouter
+     * @return          l'équipe avec la personne ajoutée
+     */
+    Equipe ajouterPersonneAEquipe(String idEquipe, Personne personne);
 }

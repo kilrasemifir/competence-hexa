@@ -17,4 +17,12 @@ public class Equipe {
     public String getNom() {
         return nom;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public List<Personne> getPersonnes() {
+        return personnes;
+    }
 }

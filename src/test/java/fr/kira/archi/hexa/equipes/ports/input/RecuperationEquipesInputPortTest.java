@@ -2,6 +2,7 @@ package fr.kira.archi.hexa.equipes.ports.input;
 
 import fr.kira.archi.hexa.equipes.logics.EquipeLogique;
 import fr.kira.archi.hexa.equipes.ports.output.EquipeDatasourceOutputPort;
+import fr.kira.archi.hexa.equipes.ports.output.PersonneOutputPort;
 import fr.kira.archi.hexa.equipes.ports.output.RecuperatuinEquipeOutputPort;
 import fr.kira.archi.hexa.equipes.ports.output.SauvegardeEquipeOutputPort;
 import org.junit.jupiter.api.BeforeAll;
@@ -19,10 +20,12 @@ class RecuperationEquipesInputPortTest {
 
     private static EquipeInputPort logique;
     private static EquipeDatasourceOutputPort datasourceOutputPort;
+    private static PersonneOutputPort personneOutputPort;
     @BeforeEach
     void setUp() {
         datasourceOutputPort = Mockito.mock(EquipeDatasourceOutputPort.class);
-        logique = new EquipeLogique(datasourceOutputPort);
+        personneOutputPort = Mockito.mock(PersonneOutputPort.class);
+        logique = new EquipeLogique(datasourceOutputPort, personneOutputPort);
     }
     @Test()
     @DisplayName("Lors de la récupération des équipes, la liste des équipes est retournée")

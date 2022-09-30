@@ -3,22 +3,18 @@ package fr.kira.archi.hexa.equipes.logics;
 import fr.kira.archi.hexa.equipes.entities.Equipe;
 import fr.kira.archi.hexa.equipes.entities.Personne;
 import fr.kira.archi.hexa.equipes.ports.input.EquipeInputPort;
-import fr.kira.archi.hexa.equipes.ports.input.RecuperationEquipesInputPort;
-import fr.kira.archi.hexa.equipes.ports.input.SauvegardeEquipeInputPort;
-import fr.kira.archi.hexa.equipes.ports.output.EquipeDatasourceOutputPort;
+import fr.kira.archi.hexa.equipes.ports.output.EquipeOutputPort;
 import fr.kira.archi.hexa.equipes.ports.output.PersonneOutputPort;
-import fr.kira.archi.hexa.equipes.ports.output.RecuperatuinEquipeOutputPort;
-import fr.kira.archi.hexa.equipes.ports.output.SauvegardeEquipeOutputPort;
 
 import java.util.List;
 
 public class EquipeLogique implements EquipeInputPort {
 
-    private EquipeDatasourceOutputPort datasource;
+    private EquipeOutputPort datasource;
     private PersonneOutputPort personneOutputPort;
 
     public EquipeLogique(
-            EquipeDatasourceOutputPort datasource,
+            EquipeOutputPort datasource,
             PersonneOutputPort personneOutputPort) {
         this.datasource = datasource;
         this.personneOutputPort = personneOutputPort;

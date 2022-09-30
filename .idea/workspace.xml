@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea478ec2-8a52-4836-8bc9-438a54d63d0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/output/PersonneOutputPort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Architecture.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/entities/Equipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/entities/Equipe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/logics/EquipeLogique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/logics/EquipeLogique.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/input/SauvegardeEquipeInputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/input/SauvegardeEquipeInputPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/input/EquipeInputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/input/EquipeInputPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/input/RecuperationEquipesInputPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/input/SauvegardeEquipeInputPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/output/EquipeDatasourceOutputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/output/EquipeOutputPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/output/PersonneOutputPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/output/PersonneOutputPort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/output/RecuperatuinEquipeOutputPort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/fr/kira/archi/hexa/equipes/ports/output/SauvegardeEquipeOutputPort.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fr/kira/archi/hexa/equipes/ports/input/RecuperationEquipesInputPortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/kira/archi/hexa/equipes/ports/input/RecuperationEquipesInputPortTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/fr/kira/archi/hexa/equipes/ports/input/SauvegardeEquipeInputPortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/fr/kira/archi/hexa/equipes/ports/input/SauvegardeEquipeInputPortTest.java" afterDir="false" />
     </list>

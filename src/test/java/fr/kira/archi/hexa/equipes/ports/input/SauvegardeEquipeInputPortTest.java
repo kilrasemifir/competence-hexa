@@ -3,11 +3,8 @@ package fr.kira.archi.hexa.equipes.ports.input;
 import fr.kira.archi.hexa.equipes.entities.Equipe;
 import fr.kira.archi.hexa.equipes.entities.Personne;
 import fr.kira.archi.hexa.equipes.logics.EquipeLogique;
-import fr.kira.archi.hexa.equipes.ports.output.EquipeDatasourceOutputPort;
+import fr.kira.archi.hexa.equipes.ports.output.EquipeOutputPort;
 import fr.kira.archi.hexa.equipes.ports.output.PersonneOutputPort;
-import fr.kira.archi.hexa.equipes.ports.output.RecuperatuinEquipeOutputPort;
-import fr.kira.archi.hexa.equipes.ports.output.SauvegardeEquipeOutputPort;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -20,11 +17,11 @@ import static org.junit.jupiter.api.Assertions.*;
 @ExtendWith(MockitoExtension.class)
 class SauvegardeEquipeInputPortTest {
     private static EquipeInputPort logique;
-    private static EquipeDatasourceOutputPort datasourceOutputPort;
+    private static EquipeOutputPort datasourceOutputPort;
     private static PersonneOutputPort personneOutputPort;
     @BeforeEach
     void setUp() {
-        datasourceOutputPort = Mockito.mock(EquipeDatasourceOutputPort.class);
+        datasourceOutputPort = Mockito.mock(EquipeOutputPort.class);
         personneOutputPort = Mockito.mock(PersonneOutputPort.class);
         logique = new EquipeLogique(datasourceOutputPort, personneOutputPort);
     }
